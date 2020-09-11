@@ -1,0 +1,139 @@
+body{
+    background-color: #050505;
+}
+
+.wrapper{
+    margin: 0 auto;
+    width: 90%;
+    height: auto;
+}
+
+.wrapper :hover{
+  box-shadow: 0px 0px 60px #33ff99;
+  transition: ease-in 400ms;
+}
+
+.about:hover > img{
+  box-shadow: none;
+}
+
+
+.about p{
+  max-width: 98%;
+  font-size: 16px;
+}
+
+
+.about .image-wrapper{
+  position: relative;
+  float: right;
+}
+
+.image-wrapper img{
+    width: 9rem;
+    height: 12rem;
+    z-index:-10;
+    border-radius: 4px;
+}
+
+.image-wrapper p{
+  text-align: center;
+}
+
+.but{
+  color: white;
+  background-color: #000000;
+  border: 1px solid white;
+  padding: 1rem;
+  size: 1rem;
+  border-radius: 4px;
+  display: inline;
+  transform: translateX(4%) translateY(-4%);
+  position: absolute;
+}
+
+.but:hover{
+  background-color: #ffffff;
+  color: #000000;
+  transform: scale(1.1, 1.1);
+  transition: ease-in 500ms;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: none;
+}
+
+.about{
+    padding: 1rem;
+    color: #ffffff;
+    border-radius: 8px;
+    border: 1px solid #ffffff;
+    margin: 6rem;
+    font-size: 24px;
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-size: 22px;
+    max-width: fit-content;
+}
+
+.about:hover > h1{
+  color: #33ff99;
+  transform: translateY(20%);
+  box-shadow: none;
+  transition: ease-in 500ms;
+}
+
+.about:hover > .image-wrapper{
+  transform: translateX(-20%);
+  transition: ease-in 500ms;
+  box-shadow: none;
+}
+
+.image-wrapper:hover img{
+  box-shadow: none;
+}
+
+.image-wrapper:hover p{
+  box-shadow: none;
+}
+
+.about:hover > p{
+  box-shadow: none;
+}
+
+.background-center-image{
+  position: relative;
+  transform: translateX(40%);
+  opacity: .5;
+}
+
+.background-center-image img{
+  border-radius: 50%;
+  height: 200px;
+}
+
+.about:hover > .background-center-image{
+  box-shadow: none;
+  transform: scale(1.1) translateX(40%);
+  transition: ease-in 500ms;
+  opacity: 1;
+}
+
+.about:hover > .background-center-image img{
+  box-shadow: none;
+}
+
+
+.fade-in{
+   opacity: 0;
+   transition: opacity 500ms ease-in;
+}
+
+.fade-in.appear{
+    opacity: 1;
+}
+
+
+
+
+
+
